@@ -1,0 +1,402 @@
+/* Импорт шрифтов Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Основные стили для страницы */
+body {
+    margin: 0;
+    /* Убираем внешние отступы */
+    font-family: "Inter", serif;
+    /* Подключаем шрифт Inter */
+    background: linear-gradient(180deg, #203025 0%, #251f18 100%);
+    /* Градиентный фон */
+    color: #ffffff;
+    /* Белый цвет текста */
+    min-width: 360px;
+}
+
+/* Основной блок с контентом */
+#main-content {
+    width: 80%;
+    max-width: 1200px;
+    /* Ограничиваем максимальную ширину */
+    margin: 50px auto;
+    /* Отступы сверху и снизу по 50px, центрирование по горизонтали */
+    padding: 20px;
+    /* Внутренние отступы */
+    border-radius: 50px;
+    /* Скругление углов */
+    backdrop-filter: blur(22.6px);
+    /* Размытие фона */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+    /* Тень */
+}
+
+/* Навигационное меню */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    margin: 50px 0;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(22.6px);
+    position: relative;
+    /* Для позиционирования текста по центру */
+}
+
+/* Логотип */
+.logo-logo {
+    text-align: center;
+    margin: 10px;
+}
+
+.logo {
+    margin-top: -80px;
+    margin-bottom: -50px;
+    display: inline-flex;
+    width: 300px;
+    /* Можно увеличить или уменьшить по необходимости */
+    height: auto;
+    /* Сохраняет пропорции изображения */
+}
+
+.logo-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+/* Контейнер для текста меню */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    /* Центрирование по горизонтали */
+    align-items: center;
+    /* Центрирование по вертикали */
+    height: 100%;
+    /* Высота контейнера */
+}
+
+.nav-text-main {
+    text-align: center;
+    /* Центрирование текста внутри блока */
+}
+
+.nav-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Делаем контейнер flex, чтобы элементы шли в строку */
+    gap: 10px 20px;
+    /* Расстояние между элементами */
+}
+
+.nav-text a {
+    text-decoration: none;
+    /* Убираем подчеркивание у ссылок */
+    color: inherit;
+    /* Наследуем цвет текста */
+    transition: text-shadow 0.3s ease-in-out;
+    /* Плавный переход */
+}
+
+.nav-text p {
+    margin: 0;
+    /* Убираем отступы у параграфов */
+    padding: 10px;
+    /* Добавляем отступы вокруг текста */
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+/* Эффект при наведении */
+.nav-text a:hover,
+.nav-text a:focus {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    /* Подсветка текста */
+}
+
+/* Сохранение эффекта после клика */
+.nav-text a.active {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.text {
+    font-size: 20px;
+    /* Размер шрифта */
+    font-weight: 200;
+    /* Легкий шрифт */
+    text-align: center;
+    /* Выравнивание по центру */
+    margin-bottom: 25px;
+    /* Отступ снизу */
+    text-transform: lowercase;
+    /* Преобразование текста в нижний регистр */
+}
+
+.container {
+    max-width: 1200px;
+    /* Ограничивает максимальную ширину контейнера до 1200 пикселей */
+    margin: 0 auto;
+    /* Устанавливает нулевые внешние отступы и центрирует контейнер по горизонтали */
+    padding: 20px;
+    /* Добавляет внутренние отступы по 20 пикселей со всех сторон */
+}
+
+.header {
+    text-align: center;
+    /* Выравнивает текст по центру */
+    margin-bottom: 25px;
+    /* Устанавливает внешний отступ снизу в 25 пикселей */
+}
+
+.header h1 {
+    margin-top: -50px;
+    margin-bottom: 0px;
+    /* Убирает внешний отступ снизу */
+    font-size: 100px;
+    /* Задаёт размер шрифта в 100 пикселей */
+    font-weight: 900;
+    /* Использует жирный шрифт */
+    text-transform: uppercase;
+    /* Преобразует весь текст в верхний регистр */
+}
+
+.header p {
+    font-size: 20px;
+    /* Задаёт размер шрифта в 20 пикселей */
+    font-weight: 200;
+    /* Использует лёгкий шрифт */
+    text-transform: lowercase;
+    /* Преобразует весь текст в нижний регистр */
+}
+
+.gallery {
+    display: flex;
+    /* Применяет гибкую разметку */
+    flex-wrap: wrap;
+    /* Позволяет элементам переноситься на новую строку */
+    gap: 20px;
+    /* Устанавливает расстояние между элементами в 20 пикселей */
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 100%);
+    /* Каждый элемент занимает треть ширины родительского контейнера минус 40 пикселей */
+    border-radius: 25px;
+    /* Закругляет углы элемента */
+    padding: 20px;
+    /* Добавляет внутренние отступы по 20 пикселей со всех сторон */
+    text-align: center;
+    /* Выравнивает текст по центру */
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавное увеличение и тень */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6); /* Тень */
+    width: 100%;
+    max-width: 330px;
+    /* Растягивает изображение на всю ширину родительского элемента */
+    border-radius: 25px;
+    /* Закругляет углы изображения */
+}
+
+.gallery-item h2 {
+    font-size: 48px;
+    /* Задаёт размер шрифта в 48 пикселей */
+    font-weight: 900;
+    /* Использует жирный шрифт */
+    text-transform: uppercase;
+    /* Преобразует весь текст в верхний регистр */
+}
+
+.gallery-item p {
+    font-size: 16px;
+    /* Задаёт размер шрифта в 16 пикселей */
+    font-weight: 300;
+    /* Использует тонкий шрифт */
+}
+
+.pers-container {
+    display: flex;
+    align-items: flex-start; /* Выровнять текст и картинку по верхнему краю */
+    gap: 25px; /* Отступ между картинкой и текстом */
+}
+
+.pers {
+    padding: 0px;
+    margin-top: 0px;
+    flex-shrink: 0; /* Чтобы картинка не сжималась */
+}
+
+.pers-text {
+    text-align: left;
+    max-width: 1000px; /* Ограничиваем максимальную ширину текста */
+}
+
+.pers-text>h2 {
+    padding: 0%;
+    display: inline-flex;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 900;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.pers-text>p {
+    display: inline-flex;
+    margin-left: 25px;
+    margin-top: 0px;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 20px;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+/* Стили для контейнера галереи */
+.gallery {
+    display: flex; /* Используем flexbox для расположения элементов */
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    gap: 15px; /* Расстояние между элементами галереи */
+    justify-content: center;
+}
+
+/* Стили для каждого элемента галереи */
+.gallery-item {
+    position: relative; /* Относительное позиционирование для вложенных абсолютных элементов */
+    width: 100%; /* Ширина элемента по умолчанию */
+    max-width: 300px; /* Максимальная ширина элемента */
+    transition: transform 0.3s ease; /* Плавное увеличение */
+}
+
+/* Анимация при наведении */
+.gallery-item:hover {
+    transform: scale(1.05); /* Увеличиваем элемент на 5% */
+}
+
+/* Контейнер для изображения и текста */
+.image-container {
+    position: relative; /* Относительное позиционирование для текста */
+    display: inline-block; /* Чтобы контейнер занимал только необходимую ширину */
+}
+
+/* Стили для изображения */
+.img-styles {
+    display: inline-flex; /* Убираем лишние отступы вокруг изображения */
+    width: 100%; /* Ширина изображения на 100% от контейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    transition: transform 0.3s ease; /* Плавное увеличение */
+}
+
+/* Стили для текста, наложенного на изображение */
+.text-gallery {
+    position: absolute; /* Абсолютное позиционирование для размещения текста на изображении */
+    bottom: 0; /* Прижимаем текст к нижней части изображения */
+    left: 10px; /* Выравниваем текст по левому краю */
+    right: 0; /* Выравниваем текст по правому краю */
+    color: white; /* Белый цвет текста */
+    margin-bottom: 25px;
+    padding: 10px; /* Внутренние отступы для текста */
+    text-align: center; /* Выравниваем текст по центру */
+    transition: transform 0.3s ease; /* Плавное увеличение */
+}
+
+/* Стили для заголовка внутри текстового блока */
+.text-gallery h2 {
+    margin: 0; /* Убираем отступы у заголовка */
+    font-size: 42px; /* Размер шрифта заголовка */
+}
+
+/* Стили для абзаца внутри текстового блока */
+.text-gallery p {
+    padding-left: 5px;
+    margin: 0; /* Отступ сверху для абзаца */
+    font-size: 16px; /* Размер шрифта абзаца */
+    text-transform: lowercase;
+
+}
+
+@media (max-width: 1300px) {
+    .pers-text>h2 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pers-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 630px) {
+    
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .text-gallery h2 {
+        font-size: 35px;
+    }
+
+    .nav-menu {
+        border-radius: 25px;
+    }
+
+    
+    .gallery-item img {
+        max-width: 100%;
+    }
+
+    .gallery-item {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        width: 100%;
+    }
+
+    #main-content {
+        border-radius: 25px;
+        padding: 20px 0;
+        margin: 30px auto;
+        width: 90%;
+    }
+
+    .gallery a {
+        display: block;
+    }
+
+    .gallery-item {
+        padding: 10px 0;
+    }
+
+    .pers-text>h2 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .pers-text>p {
+        font-size: 16px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .nav-text p {
+      font-size: 20px;
+    }
+}

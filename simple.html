@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Язык страницы - русский -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Пример страницы с граффити">
+    <meta name="author" content="Лим Сергей"> <!-- Укажите свое имя или оставьте пустым -->
+    <script src="index.js"></script>
+    <title>Граффити: Simple</title>
+
+    <!-- Подключение шрифта Inter с Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="3D.css">
+
+    <!-- Подключение jQuery (если нужно) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+</head>
+
+<body>
+    <!-- Основной контейнер для всех элементов -->
+    <div id="allrecords">
+        <!-- Основной контент -->
+        <div id="main-content">
+            <!-- Логотип -->
+             <div class="logo-logo">
+                 <div class="logo-main">
+                     <img loading="lazy"  class="logo" src="лого-тег 1.svg" alt="Логотип">
+                 </div>
+             </div>
+
+            <!-- Навигационное меню -->
+            <nav>
+                <div class="nav-menu">
+                    <!-- Текст меню -->
+                    <div class="nav-text-main">
+                        <div class="nav-text">
+                            <a href="graffiti-style.html"><p>стили</p></a>
+                            <a href="artist.html"><p>художники</p></a>
+                            <a href="index.html"><p>главная</p></a>
+                            <a href="contact.html"><p>контакты</p></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+        <!-- Блок с изображением и текстом -->
+        <div class="threed-main">
+            <div class="image-block">
+                <img loading="lazy"  src="simple-3.webp" alt="wildstyle граффити">
+            </div>
+            <div class="text-overlay">
+                <div class="title">SIMPLE</div>
+                <div class="description">
+                    Стилистика "simple" (простой стиль) характеризуется минималистичным подходом. Обычно это простые буквы, без сложных форм и излишеств. Этот стиль широко используется начинающими художниками, так как позволяет быстро научиться основам рисования букв и улучшения навыков. Главные черты: 
+                </div>
+            </div>
+        </div>
+        
+        <!-- Блок с текстом и примерами работ -->
+        <div class="text-main">
+            <div class="text-container">
+                <h2>примеры работ</h2>
+                <p>Граффити-команда «Зачем»</p>
+                <hr style="width: 250px;">
+            </div>
+        </div>
+        <!-- Секция с слайдером -->
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img loading="lazy"  id="slide-1" src="1-3.webp" alt="Пример 1">
+                    <img loading="lazy"  id="slide-2" src="2-3.webp" alt="Пример 2">
+                    <img loading="lazy"  id="slide-3" src="3-3.webp" alt="Пример 3">
+                    <img loading="lazy"  id="slide-4" src="4-3.svg" alt="Пример 4">
+                    <img loading="lazy"  id="slide-5" src="5-3.svg" alt="Пример 5">
+                    <img loading="lazy"  id="slide-6" src="6-3.svg" alt="Пример 6">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                </div>
+            </div>
+        </section>
+        <div class="avtor-main">
+            <div class="avtor">
+                <a href="zachem.html" style="text-decoration: none; color: #fff;">
+                    <p>подробнее об авторе</p>
+                </a>
+                <hr style="width: 180px; margin-top: -10px;">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
