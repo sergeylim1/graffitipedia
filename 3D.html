@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Язык страницы - русский -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Пример страницы с граффити">
+    <meta name="author" content="Лим Сергей"> <!-- Укажите свое имя или оставьте пустым -->
+    <script src="index.js"></script>
+    <title>Граффити: 3d</title>
+
+    <!-- Подключение шрифта Inter с Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="3d.css">
+
+    <!-- Подключение jQuery (если нужно) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+</head>
+
+<body>
+    <!-- Основной контейнер для всех элементов -->
+    <div id="allrecords">
+        <!-- Основной контент -->
+        <div id="main-content">
+            <!-- Логотип -->
+             <div class="logo-logo">
+                 <div class="logo-main">
+                     <img loading="lazy"  class="logo" src="лого-тег 1.svg" alt="Логотип">
+                 </div>
+             </div>
+
+            <!-- Навигационное меню -->
+            <nav>
+                <div class="nav-menu">
+                    <!-- Текст меню -->
+                    <div class="nav-text-main">
+                        <div class="nav-text">
+                            <a href="graffiti-style.html"><p>стили</p></a>
+                            <a href="artist.html"><p>художники</p></a>
+                            <a href="index.html"><p>главная</p></a>
+                            <a href="contact.html"><p>контакты</p></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+        <!-- Блок с изображением и текстом -->
+        <div class="threed-main">
+            <div class="image-block">
+                <img loading="lazy"  src="3d-1.svg" alt="3D граффити">
+            </div>
+            <div class="text-overlay">
+                <div class="title">3D</div>
+                <div class="description">
+                    3D стиль граффити добавляет объем и глубину в оформление букв. Это достигается путем использования теней, градиентов и особенно продуманного использования цвета.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Блок с текстом и примерами работ -->
+        <div class="text-main">
+            <div class="text-container">
+                <h2>примеры работ</h2>
+                <p>DAIM (настоящее имя — Mirko Reisser) — немецкий художник граффити.</p>
+                <hr>
+            </div>
+        </div>
+        <!-- Секция с слайдером -->
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img loading="lazy"  id="slide-one" src="1-1.svg" alt="Пример 1">
+                    <img loading="lazy"  id="slide-two" src="2-1.svg" alt="Пример 2">
+                    <img loading="lazy"  id="slide-tree" src="3-1.svg" alt="Пример 3">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-one"></a>
+                    <a href="#slide-two"></a>
+                    <a href="#slide-tree"></a>
+                </div>
+            </div>
+        </section>
+        <div class="avtor-main">
+            <div class="avtor">
+                <a href="daim.html" style="text-decoration: none; color: #fff;">
+                    <p>подробнее об авторе</p>
+                </a>
+                <hr style="width: 180px; margin-top: -10px;">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
