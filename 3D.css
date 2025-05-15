@@ -1,0 +1,730 @@
+/* Импорт шрифтов Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Основные стили для страницы */
+body {
+    margin: 0;
+    /* Убираем внешние отступы */
+    font-family: "Inter", serif;
+    /* Подключаем шрифт Inter */
+    background: linear-gradient(180deg, #203025 0%, #251f18 100%);
+    /* Градиентный фон */
+    color: #ffffff;
+    min-width: 360px;
+    /* Белый цвет текста */
+}
+
+/* Основной блок с контентом */
+#main-content {
+    width: 80%;
+    max-width: 1200px;
+    /* Ограничиваем максимальную ширину */
+    margin: 50px auto;
+    /* Отступы сверху и снизу по 50px, центрирование по горизонтали */
+    padding: 20px;
+    /* Внутренние отступы */
+    border-radius: 50px;
+    /* Скругление углов */
+    backdrop-filter: blur(22.6px);
+    /* Размытие фона */
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+    /* Тень */
+}
+
+/* Навигационное меню */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    margin: 50px 0;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(22.6px);
+    position: relative;
+    /* Для позиционирования текста по центру */
+}
+
+/* Логотип */
+.logo-logo {
+    text-align: center;
+    margin: 10px;
+}
+
+.logo {
+    margin-top: -80px;
+    margin-bottom: -50px;
+    display: inline-flex;
+    width: 300px;
+    /* Можно увеличить или уменьшить по необходимости */
+    height: auto;
+    /* Сохраняет пропорции изображения */
+}
+
+.logo-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+/* Контейнер для текста меню */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    /* Центрирование по горизонтали */
+    align-items: center;
+    /* Центрирование по вертикали */
+    height: 100%;
+    /* Высота контейнера */
+}
+
+.nav-text-main {
+    text-align: center;
+    /* Центрирование текста внутри блока */
+}
+
+.nav-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Делаем контейнер flex, чтобы элементы шли в строку */
+    gap: 10px 20px;
+    /* Расстояние между элементами */
+}
+
+.nav-text a {
+    text-decoration: none;
+    /* Убираем подчеркивание у ссылок */
+    color: inherit;
+    /* Наследуем цвет текста */
+    transition: text-shadow 0.3s ease-in-out;
+    /* Плавный переход */
+}
+
+.nav-text p {
+    margin: 0;
+    /* Убираем отступы у параграфов */
+    padding: 10px;
+    /* Добавляем отступы вокруг текста */
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+/* Эффект при наведении */
+.nav-text a:hover,
+.nav-text a:focus {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    /* Подсветка текста */
+}
+
+/* Сохранение эффекта после клика */
+.nav-text a.active {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.text {
+    font-size: 20px;
+    /* Размер шрифта */
+    font-weight: 200;
+    /* Легкий шрифт */
+    text-align: center;
+    /* Выравнивание по центру */
+    margin-bottom: 25px;
+    /* Отступ снизу */
+    text-transform: lowercase;
+    /* Преобразование текста в нижний регистр */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gallery-item {
+    padding: 25px;
+    text-align: center;
+}
+.gallery-item img {
+    width: 100%;
+    border-radius: 25px;
+}
+.gallery-item h2 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.gallery-item p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.threed-main {
+    margin-top: -25px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 25px;
+    position: relative; /* Устанавливает относительное позиционирование, чтобы задать контекст для позиционирования текста. */
+    display: inline-block; /* Позволяет задавать ширину и высоту контейнера, и занимает только необходимое место по ширине. */
+}
+
+.threed-main .image-block {
+    display: inline-flex; /* Используем flexbox для центрирования содержимого */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    
+}
+
+.threed-main .image-block img {
+    display: block;  /* Убирает пробелы под изображением */
+    max-width: 100%; /* Делает изображение адаптивным по ширине */
+    height: auto; /* Сохраняет пропорции изображения, адаптируя высоту автоматически */
+}
+
+.threed-main .text-overlay {
+    position: absolute; /* Устанавливает абсолютное позиционирование текста относительно контейнера .threed-main. */
+    bottom: 0; /* Прижимает текст к нижней части контейнера. */
+    left: 0; /* Прижимает текст к левой части контейнера. */
+    width: 100%; /* Растягивает элемент на всю ширину родителя, обеспечивая прижатие к низу. */
+    text-align: center; /* Центрирует текст по горизонтали внутри контейнера. */
+    padding: 10px 0; /* Добавляет отступы сверху и снизу текста. */
+    box-sizing: border-box; /* Гарантирует, что отступы не увеличат размер контейнера. */
+}
+
+.threed-main .text-overlay .title {
+    margin-bottom: 0; /* Добавляет небольшой отступ снизу заголовка. */
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.threed-main .text-overlay .description {
+    margin-bottom: 25px;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 16px;
+    text-transform: lowercase;
+    text-align: center;
+    color: #fff;
+}
+
+.text-main {
+    text-align: center;
+    padding-top: -25px ;
+    margin-top: -100px;
+}
+
+.text-container>h2 {
+    margin-bottom: 0;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.text-container>p {
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    text-transform:lowercase;
+    color: #fff;
+}
+
+hr {
+    width: 600px;
+    margin-bottom: 25px;
+}
+
+
+
+.avtor-main {
+    margin-top: -50px;
+    text-align: center;
+}
+
+.avtor-main {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: lowercase;
+    text-align: center;
+    color: #fff;
+}
+
+.avtor-main>hr {
+    stroke-width: 2px;
+    stroke: #fff;
+}
+
+
+.ism-slider > ol, .ism-slider > ol > li, .ism-slider > ol > li > img { width: 100%; list-style: none; margin: 0; padding: 0; }
+.ism-slider {
+  overflow: hidden;
+  position: relative;
+  padding: 0 !important;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-animation: ism-fadein 3s;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+@-webkit-keyframes ism-fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@-webkit-keyframes ism-loading {
+  50% { left: 120px; }
+}
+
+.ism-slider .ism-slides {
+  list-style: none;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  padding: 0 !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.ism-slider li.ism-slide {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #d5d5d5;
+  text-align: center;
+}
+
+.ism-slider .ism-img-frame {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ism-slider a.ism-image-link {
+  position: absolute;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ism-slider .ism-img {
+  display: block;
+  border: none;
+  position: absolute;
+  pointer-events: none;
+}
+
+.ism-button, .ism-pause-button {
+  position: absolute;
+  display: block;
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-align:center;
+  z-index: 6;
+  cursor: pointer;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ism-pause-button {
+  display: none;
+  left: 50%;
+}
+
+.ism-slider:hover .ism-pause-button {
+  display: block;
+}
+
+.ism-caption {
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+  padding: 0 1em;
+  text-shadow: none;
+  line-height: 1.2em;
+  padding: 0.25em 0.5em;
+  width: auto;
+  height: auto;
+  text-align: center;
+  visibility: hidden;
+}
+
+a.ism-image-link .ism-caption, a.ism-caption {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a.ism-caption:hover {
+  text-decoration: underline;
+}
+
+.ism-caption-0 {
+  z-index: 3;
+}
+
+.ism-caption-1 {
+  z-index: 4;
+}
+
+.ism-caption-2 {
+  z-index: 5;
+}
+
+.ism-radios {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 1px;
+}
+
+.ism-slider .ism-radios {
+  position: absolute;
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+  z-index: 6;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.0);
+  padding: 0 7px;
+  height: 0;
+  overflow: visible;
+}
+
+.ism-slider .ism-radios.ism-radios-as-thumbnails {
+  bottom: 5px;
+}
+
+.ism-radios li {
+  position: relative;
+  display: inline-block;
+  margin: 0 3px;
+  padding: 0;
+}
+
+.ism-radios input.ism-radio {
+  display: none;
+}
+
+.ism-radios label {
+  display: block;
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ism-radios-as-thumbnails label {
+  -webkit-background-size: 120% auto; -moz-background-size: 120% auto; -o-background-size: 120% auto; background-size: 120% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  opacity: 0.8;
+}
+
+.ism-radios-as-thumbnails label:hover {
+  border: 2px solid #fff;
+  opacity: 1;
+}
+
+.ism-radios-as-thumbnails li.active label {
+  border: 2px solid rgba(255, 255, 255, 1.0);
+  opacity: 1;
+}
+
+p.ism-badge {
+  margin: 0 auto;
+  text-align: right;
+  font-size: 10px;
+  padding-top: 1px;
+  color: #ccc;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+p.ism-badge a.ism-link {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 0.25em;
+}
+
+p.ism-badge a.ism-link:hover {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+.ism-zoom-in {
+  -webkit-animation: zoomin 0.81s linear 1;
+  animation: zoomin 0.81s linear 1;
+}
+
+@-webkit-keyframes zoomin {
+  0% { -webkit-transform: scale(1.0); transform: scale(1.0); }
+  100% { -webkit-transform: scale(3.0); transform: scale(3.0); }
+}
+@keyframes zoomin {
+  0% { -webkit-transform: scale(1.0); transform: scale(1.0); }
+  100% { -webkit-transform: scale(3.0); transform: scale(3.0); }
+}
+
+@-webkit-keyframes fadein {
+  0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+@keyframes fadein {
+  0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+
+@-webkit-keyframes slidein {
+  0% { -webkit-transform: translate(-1200px, 0); transform: translate(-1200px, 0); }
+  100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+}
+@keyframes slidein {
+  0% { -webkit-transform: translate(-1200px, 0); transform: translate(-1200px, 0); }
+  100% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+}
+
+@-webkit-keyframes popin {
+  50% { -webkit-transform: scale(1.2); transform: scale(1.2); }
+}
+@keyframes popin {
+  50% { -webkit-transform: scale(1.2); transform: scale(1.2); }
+}
+
+.ism-zoom-pan {
+  -webkit-animation: zoompan 20.0s linear 1;
+  animation: zoompan 20.0s linear 1;
+}
+@-webkit-keyframes zoompan {
+  0% { -webkit-transform: translate(0, 0) scale(1.0); transform: translate(0, 0) scale(1.0); }
+  50% { -webkit-transform: translate(-5%, -5%) scale(1.3); transform: translate(-5%, -5%) scale(1.3); }
+  100% { -webkit-transform: translate(0, 0) scale(1.0); transform: translate(0, 0) scale(1.0); }
+}
+@keyframes zoompan {
+  0% { -webkit-transform: translate(0, 0) scale(1.0); transform: translate(0, 0) scale(1.0); }
+  50% { -webkit-transform: translate(-5%, -5%) scale(1.3); transform: translate(-5%, -5%) scale(1.3); }
+  100% { -webkit-transform: translate(0, 0) scale(1.0); transform: translate(0, 0) scale(1.0); }
+}
+
+.ism-zoom-rotate {
+  -webkit-animation: zoomrotate 20.0s linear 1;
+  animation: zoomrotate 20.0s linear 1;
+}
+@-webkit-keyframes zoomrotate {
+  0% { -webkit-transform: rotate(0) scale(1.0); transform: rotate(0) scale(1.0); }
+  50% { -webkit-transform: rotate(-5deg) scale(1.3); transform: rotate(-5deg) scale(1.3); }
+  100% { -webkit-transform: rotate(0) scale(1.0); transform: rotate(0) scale(1.0); }
+}
+@keyframes zoomrotate {
+  0% { -webkit-transform: rotate(0) scale(1.0); transform: rotate(0) scale(1.0); }
+  50% { -webkit-transform: rotate(-5deg) scale(1.3); transform: rotate(-5deg) scale(1.3); }
+  100% { -webkit-transform: rotate(0) scale(1.0); transform: rotate(0) scale(1.0); }
+}
+
+.container {
+    padding: 25px;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 900px;
+    max-height: 530px;
+    margin: 0 auto;
+
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.slider>img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+} 
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav>a {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0,75;
+    transition: opacity ease 250ms; 
+}
+
+.slider-nav>a:hover {
+    opacity: 1;
+}
+
+.avtor-main {
+    padding: 50px;
+}
+
+@media (max-width: 1300px) {
+    .pers-text>h2 {
+        font-size: 70px;
+    }
+
+    .text-container>h2 {
+      font-size: 70px;
+      margin-top: 100px;
+    }
+
+    .threed-main .text-overlay .title {
+      font-size: 70px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pers-container {
+        flex-direction: column;
+    }
+
+    .threed-main {
+      margin-top: -25px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+}
+
+@media (max-width: 630px) {
+    
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .text-gallery h2 {
+        font-size: 35px;
+    }
+
+    .nav-menu {
+        border-radius: 25px;
+    }
+
+    
+    .gallery-item img {
+        max-width: 100%;
+    }
+
+    .gallery-item {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        width: 100%;
+    }
+
+    #main-content {
+        border-radius: 25px;
+        padding: 20px 0;
+        margin: 30px auto;
+        width: 90%;
+    }
+
+    .gallery a {
+        display: block;
+    }
+
+    .gallery-item {
+        padding: 10px 0;
+    }
+
+    .pers-text>h2 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .pers-text>p {
+        font-size: 16px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .text-container>h2 {
+      font-size: 42px;
+    }
+
+    .threed-main .text-overlay .title {
+      font-size: 35px;
+    }
+
+    .threed-main .text-overlay .description {
+      font-size: 14px;
+      margin-bottom: 15px;
+      padding: 0 15px;
+    }
+
+    .text-container hr {
+      display: none;
+    }
+
+    .avtor-main {
+      padding-bottom: 0px;
+    }
+
+    .threed-main .image-block img {
+        height: 360px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .nav-text p {
+      font-size: 20px;
+    }
+}
