@@ -234,6 +234,10 @@ body {
     flex-shrink: 0; /* Чтобы картинка не сжималась */
 }
 
+.pers img {
+    max-width: 285px;
+}
+
 .pers-text {
     text-align: left;
     max-width: 1000px; /* Ограничиваем максимальную ширину текста */
