@@ -1,0 +1,9 @@
+@media (max-width: 630px) {
+  * {
+    box-sizing: border-box;
+  }
+
+   .mail-container-22>img {
+        width: 50px;
+    }
+}
